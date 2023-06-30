@@ -1,0 +1,19 @@
+System bus - bus that connects the major components of a computer system (CPU, memory, I/O)
+
+System bus:
+- Control bus
+- Address bus
+- Data bus
+
+Control bus
+The number and type of lines in control bus varies, but basic lines are:
+- Read (RD):  logic zero - device is being read by the CPU
+- Write (WR): logic zero - device is being written by the CPU
+- Byte enable (E): indicate the size of the data (8, 16, 32, 64 bytes)
+
+Каждому устройству присваивается свой адрес, по которому идет обращение.
+У CPU есть специальный набор команд, с помощью  которых можно обращаться к внешним устройствам по их адресам.
+Эти адреса называются номерами портов.
+
+Взаимодействие процессора с устройствами - через посредника - контроллер.
+Команды CPU выполняются так, что при возможности вместо к опер.пам. обращаются к кэш-памяти (при чтении и записи)

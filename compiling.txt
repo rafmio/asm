@@ -1,0 +1,4 @@
+gcc -o <output-name> file.c
+
+Чтобы получить промежуточный модуль:
+gcc -S file.c
