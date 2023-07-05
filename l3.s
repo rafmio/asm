@@ -1,7 +1,7 @@
 /*Listing 3 - first program*/
 .text 
 .globl _start
-_start:
+_start: # _start - для компановщика означает, что с этого места начинает вып.прог-ма
 # some actions here
 
 # finish
