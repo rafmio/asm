@@ -1,0 +1,18 @@
+.byte  # 1 byte
+.short # 2 bytes
+.long  # 4 bytes
+.quad  # 8 bytes
+
+GAS suffixes - for determine length:
+b - byte
+w - word
+l - double word
+q - quart word
+
+При использовании syscall нужно помнить, что горантированно не сохраняются 2 регистра:
+- rcx - тут хранится адрес возврата
+- r11 - тут хранится регистр флагов
+
+Регистр rax мы используем для указания номера системной функции (но после вызова значение rax меняется)
+
+

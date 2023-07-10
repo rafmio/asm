@@ -1,6 +1,6 @@
 GAS:
 as --64 filename.s -o object.o
-ln -s objectname.o -o progname
+ld -s objectname.o -o progname
 
 
 gcc -o <output-name> file.c
