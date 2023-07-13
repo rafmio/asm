@@ -1,4 +1,4 @@
-/* listing 8. Stdin, посимвольный вывод */
+/* listing 8: stdin, посимвольный вывод */
 .data
 buf:
 .space 200, 0
@@ -7,32 +7,30 @@ buf:
 .globl _start
 _start:
 
-# read the line
-mov $buf, %rsi      # buffer's address
-mov $0,   %rdi      # stdin
-mov $200, %rdx      # buffer's length
-mov $0,   %rax      # syscall number
+mov $buf, %rsi
+mov $0, %rdi
+mov $200, %rdx
+mov $0, %rax
 syscall
 
-# print the line
-mov $200, %r8       # в регистре будет длина буфера
-mov $buf, %rsi      # начало буфера в регистр rsi
+mov $200, %r8
+mov $buf, %rsi
 
 loo:
-mov (%rsi), %al     # символ по адресу в rsi в регистр al
-cmp $10, %al        # не конец ли строки (код перевода строки)
-jz ex               # если что - заканчиваем
+mov (%rsi), %al
+cmp $10, %al
+jz ex
 
-mov $1, %rdi        # stdout
-mov $1, %rdx        # выводим один символ
-mov $1, %rax        # номер системной функции вывода
+mov $1, %rdi
+mov $1, %rdx
+mov $1, %rax
 syscall
 
-inc %rsi            # переходим к следующему символу
-dec %r8             # получить длину оставшейся части буфера
-jnz loo             # можно продолжать
+inc %rsi
+dec %r8
+jnz loo
 
 ex:
-mov $60, %rax       # номер системного вызова exit
-xor %rdi, %rdi      # код возврата (0 - без ошибок)
+mov $60, %rax
+xor %rdi, %rdi
 syscall
