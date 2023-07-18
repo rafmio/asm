@@ -1,3 +1,6 @@
+book: page 15
+
+
 To trace process:
 $ strace ./progname
 
@@ -14,9 +17,16 @@ gcc -S filename.c
 Процессор
 
 RISC, ARM, x86, IA-32, архитектура, платформа - разобраться
+Почти все современные ПК используют архитектуру набора команд x86-64 (иногда называют AMD64)
+Старые ПК используют арх-ру x86 (32 битная версия x86-64)
+Многие сотовые телефоны используют арх. ARM
+PowerPC не рассматриваем
 
 Установить утилиту cpuid для развернутой инфо о процессоре
 
 Что копируется при mov $buf %rsi - данные из buf или адрес переменной buf?
 
-
+The two main syntaxes:
+- NASM (Intel syntax)
+- AT&T (GAS syntax)
+There are no difference in functionality, only in look.
