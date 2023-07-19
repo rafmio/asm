@@ -1,13 +1,13 @@
 .byte  # 1 byte
-.short # 2 bytes
-.long  # 4 bytes
+.short # 2 bytes #short
+.long  # 4 bytes # int
 .quad  # 8 bytes
 
 GAS suffixes - for determine length:
 b - byte
-w - word
-l - double word
-q - quart word
+w - word	# short
+l - double word # int
+q - quart word  # 
 
 При использовании syscall нужно помнить, что горантированно не сохраняются 2 регистра:
 - rcx - тут хранится адрес возврата

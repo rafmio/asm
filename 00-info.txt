@@ -1,4 +1,4 @@
-book: page 15
+book: page 21
 
 
 To trace process:
@@ -30,3 +30,5 @@ The two main syntaxes:
 - NASM (Intel syntax)
 - AT&T (GAS syntax)
 There are no difference in functionality, only in look.
+
+The computer knows which instruction to read through a special rigister known as instruction pointer (IP), wich is also known as the program counter (PC).
