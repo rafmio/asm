@@ -1,5 +1,7 @@
 book: page 21
 
+Код завершения последней выполненной команды:
+$ echo $?
 
 To trace process:
 $ strace ./progname
