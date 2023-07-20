@@ -1,0 +1,14 @@
+$ gdb fileName.exe
+
+(gdb) break *_start # set breakpoint at _start. (*) means that _start refers to an address memory
+(gdb) run 
+(gdb) disassebmle # dump of assembler code for function _start
+
+disassebmle:
+(=>) - points to the current instruction
+The long hex num (0x00000000000040100e) - is the address of the instruction
+<+0> # is offset from the start of the nearest previous label of function (_start)
+
+(gdb) info registers # complete dump of all registers 
+(gdb) stepi # go to the next instruction
+
