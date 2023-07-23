@@ -1,0 +1,15 @@
+The x86-64 ISA has 16 general-purpose registers. 
+8 of those are carried over from 32-bit architecture.
+This 8 are divided into two classes:
+	- 4 computational registers - %rax, %rbx, %rcx, %rdx:
+		- %rax - accumulator. The most widely used GP registers for computation
+		- %rdx - base register. Ofted used for indexed addressing
+		- %rcx - count register. It is historically used for counts when doing repetiteve code (loops)
+		- %rdx - data register
+	- 4 registers %rsi, %rdi, %rbp, %rsp (they are largely intended to be pointers, they will store the memory address):
+		- %rsi - source index. For working with longer spans of memory
+		- %rdi - destination index. Is often used for working with conjunction with %rsi
+		- %rbp - base pointer
+		- %rsp - stack pointer
+
+Ramained regisetrs - %r8-%r15
