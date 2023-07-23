@@ -1,0 +1,20 @@
+addq %rax ,%rdi # takes the value in $rax, 
+		# add it to the value in %rdi, 
+		# store resulting value in %rdi
+
+mulq, divq - the destination is assumed to be %rax
+
+mulq -    multiplies the source by %rax
+       	  %rax - is the distination
+          A number cannot be used as the source - it must be register of memory location
+
+divq	- divides %rax by the source
+	  %rax is the distination
+	  A number cannot me used as the source - it must be register of memory location
+	  The remainder is stored in another regeister, %rdx, which should be set to zero before instruction occurs
+
+For mulq and divq we never write %rax, it is implied by the intruction itself
+
+? Пример, инструкция mulq %rbx - тут берется %rbx, умножается на %rax и результат сохраняется в %rax
+? Пример, инструкция divq %rcx - берем %rax, делим на %rcx, результат - в %rax, остаток - в %rdx
+
