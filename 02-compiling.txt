@@ -4,6 +4,9 @@ simple version:
 as myFile.s -o myFile.o
 ld myFIle.o -o myFile.exe
 
+for adding debug ingo:
+as -g filename.s -o object.o
+
 as --64 filename.s -o object.o
 ld -s objectname.o -o progname
 

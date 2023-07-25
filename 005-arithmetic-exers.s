@@ -7,8 +7,6 @@ _start:
 	movq $300, %rdx
 	movq $300, %rsi
 	movq $300, %rdi
-	movq $300, %rbp
-	movq $300, %rsp
 	movq $300, %r8
 	movq $300, %r9
 	movq $300, %r10

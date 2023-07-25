@@ -12,3 +12,6 @@ The long hex num (0x00000000000040100e) - is the address of the instruction
 (gdb) info registers # complete dump of all registers 
 (gdb) stepi # go to the next instruction
 
+(gdb) info file # информация об архитектуре, секциях
+(gdb) info functions - адреса _start, __bss_start, _edata, _end
+
