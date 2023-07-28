@@ -1,0 +1,11 @@
+%eflags register
+
+ZF (zero flag): 1 if result is 0, and 0 if not
+CF (carry flag): 1 if result was bigger than could be held in the distination register
+
+jz: jump if zero
+jnz: jump if not zero
+jc: jump if carry
+jnc: jump if no carry
+
+
