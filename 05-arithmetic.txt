@@ -18,6 +18,7 @@ For mulq and divq we never write %rax, it is implied by the intruction itself
 ? Пример, инструкция mulq %rbx - тут берется %rbx, умножается на %rax и результат сохраняется в %rax
 ? Пример, инструкция divq %rcx - берем %rax, делим на %rcx, результат - в %rax, остаток - в %rdx
 
+The multiply instruction always multiplies with %rax and stores the result there.
 
 Регистры (вывел GDB):
 rax     
