@@ -15,3 +15,13 @@ The long hex num (0x00000000000040100e) - is the address of the instruction
 (gdb) info file # информация об архитектуре, секциях
 (gdb) info functions - адреса _start, __bss_start, _edata, _end
 
+Интересный эффект достигается командой layout:
+(gdb) layout asm
+
+Изучить подробнее
+
+
+(gdb) info file # инфа об архитектуре файла, секциях
+
+x/ 0x402008 # вывести содержание ячейки памяти 0x402008
+x/nfu 0x402008 # вывести содержание ячейки памяти 0x402008 в десятичном формате
