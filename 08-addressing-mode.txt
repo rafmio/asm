@@ -1,0 +1,10 @@
+The general syntax for accessing memory is:
+
+VALUE(BASEREG, IDXREG, MULTIPLIER)
+
+VALUE - fixed value
+BASEREG and IDXREG - registers
+MULTIPLIER - fixed multiplier, which can be 1, 2, 4 or 8 (it is 1 if left out)
+
+If piece is left out, it is assumed to be zero (except for MULTIPLIER, which is assumed to be one)
+
