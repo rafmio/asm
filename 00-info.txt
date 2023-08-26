@@ -1,4 +1,5 @@
-book: page 73
+book: page 81
+finish exersice /chunks/021-
 
 
 Код завершения последней выполненной команды:
