@@ -2,7 +2,7 @@
 .section .text
 _start:
 	### Initialize Registers ###
-	leaq people, %rbx			# pointer to first record
+	leaq people, %rbx			# pointer to first record. 'leak' - see below
 	movq numpeople, %rcx			# record count
 	movq $0, %rdi				# tallest value found
 	
@@ -37,3 +37,7 @@ finish:
 	movq $60, %rax
 	syscall
 
+
+# LEAQ INSTRUCTION:
+# leaq means 'load effective address' - rather than load the contents of the memory at this location, will
+# calculate the final address and store the address itself into the distination register

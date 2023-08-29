@@ -21,7 +21,7 @@ endpeople:	# Marks the end of the array for calculation purposes
 .globl WEIGHT_OFFSET, HAIR_OFFSET, HEIGHT_OFFSET, AGE_OFFSET
 .equ WEIGHT_OFFSET,  0
 .equ HAIR_OFFSET,    8
-.equ HEIGTH_OFFSET, 16
+.equ HEIGHT_OFFSET, 16
 .equ AGE_OFFSET,    24
 
 # Total size of the struct
