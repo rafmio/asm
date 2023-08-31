@@ -1,5 +1,5 @@
-book: page 81
-finish exersice /chunks/021-
+book: page 83
+debug exersice /chunks/021-person-data/brown-count
 
 
 Код завершения последней выполненной команды:
