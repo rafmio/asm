@@ -1,5 +1,9 @@
 book: page 83
-debug exersice /chunks/021-person-data/brown-count
+008-jmp.s
+
+Перечитать теорию
+Повторить chunks все
+
 
 
 Код завершения последней выполненной команды:
