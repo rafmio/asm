@@ -1,5 +1,5 @@
 book: page 83
-018-largest-value.s
+020-largest-value-rcx.s
 
 Повторить chunks все
 
