@@ -40,4 +40,4 @@ finish:
 
 
 # $ as brown-count.s -o brown-count.o
-# $ ls person-data.o brown-count.o - brown-cownt
+# $ ld person-data.o brown-count.o -o brown-cownt
