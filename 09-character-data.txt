@@ -1,0 +1,6 @@
+When you have arrays of values, you need to know where the endpoint is.
+The common way to mark the ending of the string is with the NULL character. The null character has a literal value of 0 in ASCII, and it specifically meands "the and of the string". 
+
+If you string is a null-terminated string (has a null character at the end), then all you need to know is ahte addres of the first character.  
+
+
