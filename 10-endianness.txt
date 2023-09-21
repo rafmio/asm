@@ -1,0 +1,9 @@
+Endianness
+
+Little endian - least significant byte is stored first
+Big endian    - most significant byte is stored first
+
+Big endian - network byte order
+The x86-64 instruction set architercture is a little endian intruction set
+
+

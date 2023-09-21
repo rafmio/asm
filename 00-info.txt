@@ -1,4 +1,5 @@
-book: page 87
+book: page 91
+finish example 023-multi-byte-mov.s
 
 Код завершения последней выполненной команды:
 $ echo $?
