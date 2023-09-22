@@ -31,8 +31,6 @@ endloop:
 
 	loopq mainloop				# decrement %rcx and do it again
 
-	### Finesh it off ###
-
 finish:
 	movq $60, %rax
 	syscall
