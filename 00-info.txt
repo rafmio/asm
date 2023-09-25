@@ -1,5 +1,5 @@
-book: page 91
-finish example 023-multi-byte-mov.s
+book: page 101
+finish example fihish last example
 
 Код завершения последней выполненной команды:
 $ echo $?
