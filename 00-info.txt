@@ -1,4 +1,4 @@
-book: page 101
+book: page 103
 finish example fihish last example
 
 Код завершения последней выполненной команды:
