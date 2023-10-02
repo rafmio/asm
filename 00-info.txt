@@ -1,5 +1,4 @@
-book: page 111
-finish example fihish last example
+book: page 128
 
 Код завершения последней выполненной команды:
 $ echo $?

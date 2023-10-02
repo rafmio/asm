@@ -1,0 +1,14 @@
+There are basically four types of jump instruction:
+	- short
+	- near
+	- far
+	- indirect
+
+Short jump - withn 127 bytes of the current instruction.
+Near - somewhere within the current address space. 
+Far - isn't really used anymore.
+Indirect - allow us to jump to an address that we won't know until runtime:
+		jmp  mytarget
+		jmp *mytarget
+
+

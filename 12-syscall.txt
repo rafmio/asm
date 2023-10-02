@@ -1,0 +1,18 @@
+Many syscalls require information. The parameters, if needed, of a syscall are placed int the following registers:
+1. %rdi
+2. %rsi
+3. %rdx
+4. %r10
+5. %r8
+6. %r9
+
+If syscall takes less than six parameters, it simply ignores the contents of that register.
+
+???:
+The 'syscall' instruction itself clobbers register %rcx (this stores where the next instruction will be when the kernel returns) and %r11 (the current contents fo %eflags get copied to %r11). If the system call has a value to give back to the program, it will store that value in %rax.
+
+If you have anything important in these three registers, you should move them shomewhere else before making the system call.
+???
+
+
+
