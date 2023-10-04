@@ -1,4 +1,6 @@
 book: page 128
+re-wirte 025-wait5.s and debug it
+
 
 Код завершения последней выполненной команды:
 $ echo $?
