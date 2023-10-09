@@ -1,0 +1,4 @@
+SYSCALL NUMBERS:
+
+1 - write
+201 - time

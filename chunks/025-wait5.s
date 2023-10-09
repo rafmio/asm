@@ -1,36 +1,30 @@
 .globl _start
 
 .section .data
-
 curtime:
-	.quad 0						# The time will stored here
-#--------------------------------------------------------------------------------------------
+	.quad 0			# the time will be stored here
 
 .section .text
 _start:
-	### Initialize
-	movq $0xc9,    %rax			# 0xc9 (decimal 201) is the time()  syscall number 
+	movq $0xC9,    %rax	# get initialized time (0xC9 - 201 time() syscall number)
 	movq $curtime, %rdi
 	syscall
 
-	movq curtime,  %rdx			# store it in %rdx
+	movq curtime,  %rdx	# store it in %rdx
 
-	addq $5,       %rdx			# add 5 seconds
+	addq $5,       %rdx	# add 5 seconds
 
 timeloop:
-	# Check the time
-	movq $0xc9,    %rax
+	# check the time
+	movq $0xC9,    %rax		
 	movq $curtime, %rdi
 	syscall
 
-	# If I haven't reached the time specified in %rdx, do it again
+	# if i haven't reached the time specified in %rax, do it again
 	cmpq %rdx,      curtime
 	jb timeloop
 
 timefinish:
-	# Exit:
-	movq $0x3c,    %rax
+	movq $0x3C,    %rax
 	movq $0,       %rdi
 	syscall
-
-

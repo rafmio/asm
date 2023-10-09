@@ -1,6 +1,5 @@
-book: page 128
-re-wirte 025-wait5.s and debug it
-
+book: page 130
+write() 'simpleoutput.s'
 
 Код завершения последней выполненной команды:
 $ echo $?
