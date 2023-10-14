@@ -2,3 +2,8 @@ SYSCALL NUMBERS:
 
 1 - write
 201 - time
+
+Linux System Call Table:
+https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md
+
+$ man 2 syscalls
