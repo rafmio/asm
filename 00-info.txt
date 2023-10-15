@@ -1,5 +1,5 @@
 book: page 132
-Do exercises at the end of the chapter 10
+Do exercises at the end of the chapter 10 (Do execrcise #2 - loop!)
 
 Код завершения последней выполненной команды:
 $ echo $?
