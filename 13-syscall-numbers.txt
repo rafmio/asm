@@ -1,5 +1,6 @@
 SYSCALL NUMBERS:
 
+0 - read
 1 - write
 201 - time
 
